@@ -15,5 +15,5 @@ const cartoon_Schema = mongoose.Schema(
         timestamps: true,
     }
 );
-const cartoon = mongoose.model("/cartoon", cartoon_Schema);
+const cartoon = mongoose.model("cartoon", cartoon_Schema);
 module.exports = cartoon;

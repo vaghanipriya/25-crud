@@ -1,15 +1,14 @@
 const mongoose = require("mongoose");
 
-const book_Schema = mongoose.Schema(
+const movie_Schema = mongoose.Schema(
     {
-        book_name: {
+        movie_name: {
             type: String,
             trim: true,
         },
-
-        book_author: {
+        movie_rating: {
             type: String,
-            trim: true,
+            default: 0,
         },
     },
     {
@@ -17,6 +16,6 @@ const book_Schema = mongoose.Schema(
     }
 );
 
-const book = mongoose.model("Book", book_Schema);
+const movie = mongoose.model("movie", movie_Schema);
 
-module.exports = book;
+module.exports = movie;
